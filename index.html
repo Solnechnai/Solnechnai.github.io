@@ -1,0 +1,62 @@
+
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Сайт-визитка Татьяны</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            background-image: url('fon.jpg'); 
+            background-size: cover; 
+            color: #fff; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        
+        .card {
+            background-color: rgba(0, 0, 0, 0.5); /* Добавил полупрозрачность для лучшего контраста текста */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center; /* Центрирование содержимого карточки */
+            width: 300px; /* Установка фиксированной ширины для карточки */
+        }
+
+        .profile-img { 
+            width: 170px; 
+            height: 170px; 
+            border-radius: 85px; /* Корректировка радиуса для круга */
+            margin: 10px auto; /* Для автоматического выравнивания по горизонтали */
+            display: block; 
+            border: 3px solid #fff; /* Увеличенная толщина рамки */
+        }   
+        
+        h1, h2 { 
+            margin: 7px 0; 
+        }
+        
+        /* Добавленные стили для ссылок (если потребуются) */
+        a {
+            color: #4FC3F7; /* Синий цвет ссылок */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+
+    </style> 
+</head> 
+<body> 
+    <div class="card"> 
+        <img src="avatar.jpg" alt="Фотография Татьяны" class="profile-img"> 
+        <h1>Привет, я - Таня</h1> 
+        <h2>Я - QA engineer (Тестировщик ПО)</h2>
+        <p>Сейчас я нахожусь в поиске дружной команды и нового проекта.</p> 
+    </div> 
+</body> 
+</html>
