@@ -15,8 +15,8 @@ jobs:
     - name: Send telegram message on push
       uses: appleboy/telegram-action@master
       with:
-        to: '@solnechnai_t'
-        token: 7744807772:AAEQ2ZPOODTHwmkcmy1PI4gIGLnMD8K4AeE
+        to: ${{ secrets.TG_ID }}
+        token: ${{ secrets.TG_TOKEN }}
         message: |
           ${{ github.actor }} создал новый коммит: ${{ github.event.commits[0].message }}
           Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{github.sha}}
